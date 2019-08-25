@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <title>FacebookApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <div class="main">
+    <div class="header">
+    <header>
+        <table>
+
+            <tr>
+                <td class="size"><%= image_tag"face.png" %></td>
+                <td>
+                    <h1 class="fb">welcome to facebook</h1>
+                </td>
+                <td>
+                    <div class="div1">
+                            <button class="bit">search</button>
+                            <button class="btn">profile</button>
+                            <button class="btn">home</button>
+                            <button class="btn">create</button>
+                            <button class="btn"><a href="login.html">logout</a></button>
+                            
+                        </nav>
+                </td>
+            </tr>
+        </table>
+
+
+
+</header>
+</div>
+
+
+<div class="div2">
+    <table class="table">
+        <tr>
+            <td class="size"><%= image_tag"prifil.jpg" %></td>
+            <td>profile</td>
+        </tr>
+
+        </tr>
+        <tr>
+            <td class="size"><%= image_tag"msnger.jpg"%></td>
+            <td>messenger</td>
+        </tr>
+        <tr>
+            <td class ="size"><%= image_tag"event.jpg" %></td>
+            <td>events</td>
+        </tr>
+        <tr>
+            <td class="size"><%= image_tag "pages.jpg" %></td>
+            <td>pages</td>
+        </tr>
+        <tr>
+            <td class="size"><%= image_tag"contacts.png"%></td>
+            <td>friend lists</td>
+        </tr>
+        </tr>
+        <tr>
+            <td><a href="">see more</a></td>
+        </tr>
+    </table>
+</div>
+<div class="div4">
+    
+<form>
+    names:<input type="text" value="enter your name"><br><br>
+   email :<input type="text" value="enter your email"><br><br>
+   password: <input type="password" ><br><br>
+    <a href="exercise.html"><input type="button" value="login"></a> or 
+    <a href="exercise.html"><input type="button" value="create account"></a>
+</form>
+</div>
+<div class="footer">
+    
+</div>
+</div>
+          <%= yield   %>
+        </div>
+        <div class="col-sm-3">
+        
+          <div class="list-group">
+            <h2> Online Friends</h2>
+            <% User.all.each do |user| %>
+              <tr>
+                <td><h3><%= user.email %></h3><br>
+                </td>
+              </tr>
+            <% end %>
+            
+          </div>
+          
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <footer>
+        <p>welcome to facebook</p>
+        <p>Contact information: <a href="https://mail.google.com/mail/u/0/?hl=en#inbox"> priscille@gmail.com</a>.</p>
+      </footer>
+      <footer class="footer"> 
+      facebook designed by me
+      </footer>
+
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>

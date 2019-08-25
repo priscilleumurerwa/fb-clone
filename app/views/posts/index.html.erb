@@ -1,0 +1,40 @@
+
+<% if user_signed_in? %>
+<%= link_to 'Sign Out', destroy_user_session_path, class: "btn btn-danger ", method: :delete %>
+<% else %>
+
+<%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-info" %>
+
+<%= link_to 'Sign In', new_user_session_path, class: "btn btn-info"  %>
+<% end %>
+<h1 >Lists Posts</h1>
+
+<br><br>
+<table>
+  <thead>
+   <h2> Posts from your friends! you can view details</h2>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><h3><%= post.title %></h3><br>
+        <p ><%= post.content %></p><br>
+        <%= image_tag post.image.url %><br>
+        <%= post.user.email %><br>
+        <%= link_to 'Details', post, class: "btn btn-info" %>
+        <% if post.user == current_user %>
+        <%= link_to 'Edit ', edit_post_path(post), class: "btn btn-warning" %>
+        <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        <% end %>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<div class = "row">
+<div >
+
+<br>
+
+<%= link_to 'Create New Post', new_post_path, class: "btn btn-success" %>

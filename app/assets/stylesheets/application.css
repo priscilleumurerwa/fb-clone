@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+ body{
+   background-color:greenyellow;
+ }
+ 
+ .header{
+   background-color: blueviolet;
+   width: 100%;
+ }
+ .div1{
+   margin-left: 15rem;
+ }
+ .imgs{
+   width:30%;
+ margin-top:2rem;
+ margin-left:3rem;
+ }
+ .table{
+   width:45%;
+ }
+ 
+ .div2{
+   float: left;
+   margin-left: 10rem;
+ height: 20px;;
+   width:35%;
+ }
+ .div4 {
+   float: right;
+   width: 300px;
+   margin-right: 17rem;
+   margin-top: 10rem;
+ 
+ }
+   form input type{
+   
+ margin-left: 20rem;
+ }
+ .footer{
+   margin-top: 50rem;
+   text-align: center;
+   font-size: 25px;
+   background-color: blueviolet !important;
+ 
+ 
+ }
+ image_tag{
+    width: 20px;
+ }
+ .main{
+    background-color: aqua;
+ }
