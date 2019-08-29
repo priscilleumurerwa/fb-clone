@@ -17,11 +17,11 @@
 
   <tbody>
     <% @posts.each do |post| %>
+      
       <tr>
         <td><h3><%= post.title %></h3><br>
         <p ><%= post.content %></p><br>
-        <%= image_tag post.image.url %><br>
-        <%= post.user.email %><br>
+  
         <%= link_to 'Details', post, class: "btn btn-info" %>
         <% if post.user == current_user %>
         <%= link_to 'Edit ', edit_post_path(post), class: "btn btn-warning" %>

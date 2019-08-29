@@ -13,15 +13,16 @@
  */
 
  body{
-   background-color:greenyellow;
+   background-color:burlywood;
  }
  
  .header{
    background-color: blueviolet;
-   width: 100%;
+   width: 110%;
  }
  .div1{
    margin-left: 15rem;
+   width: 70%;
  }
  .imgs{
    width:30%;
@@ -35,7 +36,7 @@
  .div2{
    float: left;
    margin-left: 10rem;
- height: 20px;;
+ height: 10px;;
    width:35%;
  }
  .div4 {
@@ -50,10 +51,11 @@
  margin-left: 20rem;
  }
  .footer{
-   margin-top: 50rem;
+   margin-top: 60rem;
    text-align: center;
    font-size: 25px;
    background-color: blueviolet !important;
+   width:110%;
  
  
  }
@@ -63,3 +65,18 @@
  .main{
     background-color: aqua;
  }
+  .div1 .btns{
+   height:5px;
+   width:20px;
+   
+ }
+ .bit{
+   width:14rem;
+ }
+ .div3{
+   float: right;
+   margin-top:  5%;
+  margin-right: 3rem;
+ }
+ 
+
