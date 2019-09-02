@@ -16,6 +16,7 @@
   </thead>
 
   <tbody>
+  
     <% @posts.each do |post| %>
       
       <tr>
@@ -23,17 +24,16 @@
         <p ><%= post.content %></p><br>
   
         <%= link_to 'Details', post, class: "btn btn-info" %>
-        <% if post.user == current_user %>
+       
         <%= link_to 'Edit ', edit_post_path(post), class: "btn btn-warning" %>
         <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
-        <% end %>
+      
         
       </tr>
     <% end %>
   </tbody>
 </table>
-<div class = "row">
-<div >
+
 
 <br>
 
