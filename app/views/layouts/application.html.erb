@@ -47,51 +47,39 @@
     <table class="table">
         <tr>
             <td class="size"><%= image_tag"prifil.jpg" %></td>
-            <td>profile</td>
+        
         </tr>
 
         </tr>
         <tr>
             <td class="size"><%= image_tag"msnger.jpg"%></td>
-            <td>messenger</td>
+            
         </tr>
         <tr>
             <td class ="size"><%= image_tag"event.jpg" %></td>
-            <td>events</td>
+          
         </tr>
         <tr>
             <td class="size"><%= image_tag "pages.jpg" %></td>
-            <td>pages</td>
+           
         </tr>
         <tr>
             <td class="size"><%= image_tag"contacts.png"%></td>
-            <td>friend lists</td>
+           
         </tr>
         </tr>
         <tr>
             <td><a href="">see more</a></td>
         </tr>
     </table>
-</div>
-<div class="div3">
-<table>
-<h3>List of attractive things in this page</h3><br>
-<tr><td><%= image_tag"pro3.jpg"%></td>
-<tr><td><%= image_tag"fb5.jpg"%></td></tr>
-<tr><td><%= image_tag"pro5.jpg"%></td><td></tr>
-<tr><%= image_tag"pro2.jpg"%></td></tr>
-</table>
-</div>
-<div class="footer">
-    
+
 </div>
 
 </div>
+<div class="list-group">
           <%= yield   %>
-        </div>
-        <div class="col-sm-3">
         
-          <div class="list-group">
+        
             <h2> Online Friends</h2>
             <% User.all.each do |user| %>
               <tr>
@@ -99,16 +87,10 @@
                 </td>
               </tr>
             <% end %>
-            
-          </div>
-          
-        </div>
+        
       </div>
       <br><br><br><br><br>
-      <footer>
-        <p>welcome to facebook</p>
-        <p>Contact information: <a href="https://mail.google.com/mail/u/0/?hl=en#inbox"> priscille@gmail.com</a>.</p>
-      </footer>
+      
       <footer class="footer"> 
       facebook designed by me
       </footer>
